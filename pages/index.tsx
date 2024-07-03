@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden bg-[#F5F5F5]">
+    <main className="overflow-x-hidden bg-primaryBg">
       <DesktopNav />
       <HeroSection/>
    </main>

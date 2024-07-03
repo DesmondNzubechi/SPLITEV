@@ -17,7 +17,8 @@ import sustainability from '../../public/images/sustainability.svg'
 import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from 'react-icons/go';
 import { ForHost } from '../ForHost/ForHost';
-
+import { Subscription } from '../Subscription/Subscription';
+import { ExperienceTheSplitEv } from '../Experience/Experience';
 export const HeroSection = () => {
     return<>
     <div style={{
@@ -195,6 +196,8 @@ export const HeroSection = () => {
 
         </div>
         
-        <ForHost/>
+        <ForHost />
+        <Subscription />
+        <ExperienceTheSplitEv/>
         </>
 }

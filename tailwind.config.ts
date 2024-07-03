@@ -17,7 +17,9 @@ const config: Config = {
         "navBg": "rgba(255, 255, 255, 0.60)",
         "anotherBg": "rgba(255, 255, 255, 0.75)",
         'whiteBg' : "rgba(255, 255, 255, 0.92)",
-        "textPrimary" : "#7F847D"
+        "textPrimary": "#7F847D",
+        "primaryBg" : "#F5F5F5"
+       
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
