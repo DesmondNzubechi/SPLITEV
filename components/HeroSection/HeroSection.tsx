@@ -19,6 +19,7 @@ import { GoArrowRight } from 'react-icons/go';
 import { ForHost } from '../ForHost/ForHost';
 import { Subscription } from '../Subscription/Subscription';
 import { ExperienceTheSplitEv } from '../Experience/Experience';
+import { ForDrivers } from '../ForDrivers/ForDrivers';
 export const HeroSection = () => {
     return<>
     <div style={{
@@ -198,6 +199,7 @@ export const HeroSection = () => {
         
         <ForHost />
         <Subscription />
-        <ExperienceTheSplitEv/>
+        <ExperienceTheSplitEv />
+        <ForDrivers/>
         </>
 }
