@@ -18,7 +18,8 @@ const config: Config = {
         "anotherBg": "rgba(255, 255, 255, 0.75)",
         'whiteBg' : "rgba(255, 255, 255, 0.92)",
         "textPrimary": "#7F847D",
-        "primaryBg" : "#F5F5F5"
+        "primaryBg": "#F5F5F5",
+        "blackTransparent" : 'rgba(0, 0, 0, 0.50)'
        
       },
       backgroundImage: {
