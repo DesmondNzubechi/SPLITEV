@@ -19,7 +19,8 @@ const config: Config = {
         'whiteBg' : "rgba(255, 255, 255, 0.92)",
         "textPrimary": "#7F847D",
         "primaryBg": "#F5F5F5",
-        "blackTransparent" : 'rgba(0, 0, 0, 0.50)'
+        "blackTransparent": 'rgba(0, 0, 0, 0.50)',
+        "lightBlue" : 'rgba(74, 70, 251, 0.12)'
        
       },
       backgroundImage: {

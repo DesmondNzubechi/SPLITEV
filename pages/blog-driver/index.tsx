@@ -11,7 +11,14 @@ import { JoiningIsSimple } from '@/components/JoiningIsSimple/JoiningIsSimple'
 import { JoinGreenCommunity } from '@/components/JoinGreenCommunity/JoinGreenCommunity'
 import { WhyChoseSplitEv } from '@/components/whyChooseSplitEv/WhyChoseSplitEv'
 import moneyBag from '../../public/images/moneyBag.svg'
-function BlogHost() {
+import { IoIosCloudDownload } from "react-icons/io";
+import { EarnAsYouCharge } from '@/components/earnAsYouCharge/earnAsYouCharge'
+import { OurMobileApp } from '@/components/ourMobileApp/OurMobileApp'
+import { Map } from '@/components/Map/map'
+import { SupportingYou } from '@/components/SupportingYou/SupportingYou'
+
+
+function BlogDriver() {
     return <>
     <div className=' py-[150px] px-[30px] flex flex-col gap-[50px] items-center justify-center'>
         <div className='flex flex-col gap-0'>
@@ -35,13 +42,17 @@ function BlogHost() {
                 </div>
             </div>
             <div className='bg-[#FFF] p-[10px] rounded-full '>
-                <div className='flex items-center gap-[10px] rounded-full p-2 bg-[#4A46FB1F] '>
-                <Link href='/blog-host' className='bg-anotherBg w-full text-[12px]  md:text-[18px] text-center leading-[150%] font-[600] text-blackText rounded-full px-[10px] py-[6px] items-center self-stretch'>I'm a Host</Link>
-                <Link href='/blog-driver' className=' px-[10px] w-full text-[12px] md:text-[18px] text-center leading-[150%] font-[600] text-blackText rounded-full py-[6px] items-center self-stretch'>I'm a Driver</Link>
+                    <div className='flex items-center gap-[10px] rounded-full p-2 bg-[#4A46FB1F] '>
+                    <Link href='/blog-host' className=' px-[10px] w-full text-[12px] md:text-[18px] text-center leading-[150%] font-[600] text-blackText rounded-full py-[6px] items-center self-stretch'>I'm a Host</Link>
+                <Link href='/blog-driver' className='bg-anotherBg w-full text-[12px]  md:text-[18px] text-center leading-[150%] font-[600] text-blackText rounded-full px-[10px] py-[6px] items-center self-stretch'>I'm a Driver</Link>
+               
                 </div>
             </div>
         </div>
         
+            
+            
+            
 
         <div className='flex flex-col gap-[24px] rounded-[20px] p-[5px] bg-[#FFF] '>
             <div className='flex flex-col md:flex-row rounded-[20px] gap-[24px] p-[16px] items-start bg-[#4A46FB1F]'>
@@ -77,14 +88,72 @@ function BlogHost() {
             </div>
         </div>
         </div>
-        <YourPottential/>
-       <EstimatedDemand/>
-       
-        <PartnershipProgram />
-        <JoiningIsSimple />
-        <JoinGreenCommunity />
-        <WhyChoseSplitEv/>
+        <div className="flex flex-col gap-[40px] py-[100px] px-[30px] items-center justify-center ">
+        <div className="flex flex-col gap-[10px] items-center ">
+            <h1 className="text-[25px] text-blackText md:text-[48px] font-[600] leading-[140%]  ">Joining is Simple!</h1>
+            <p className="md:text-[18px] text-[12px] font-[600] leading-[150%] text-[#7F847D] ">Our easy-to use interface guides you through the process</p>
+        </div>
+        <div className='flex flex-col items-start justify-center md:flex-row gap-[30px] md:gap-0'>
+            <div className="flex flex-col gap-5 w-[300px]">
+                <div className="flex items-center gap-0 ">
+                <div className='relative bg-[#FFF] p-[20px] rounded-full'>
+                    <h1 className='absolute bg-gradient-to-r top-[-10px] left-0 px-[10px] py-[3px] rounded-full from-[#D1ADFF] to-[#E7D5FF] '>1</h1>
+                    <IoIosCloudDownload />
+                    </div>
+                    <span className=" hidden md:block h-[3px] w-full bg-[#4A46FB1F] "></span>
+                </div>
+                <div className="flex flex-col gap-5 pr-[15px]">
+                    <h1 className=" md:text-[28px] text-[15px] leading-[130%] text-blackText font-[600]  ">Download</h1>
+                    <p className="font-[400] leading-[130%] text-[12px] md:text-[16px] text-[#7F847D] ">Download our app from App Store or Play Market</p>
+                </div>
+            </div>
+            <div className="flex flex-col gap-5 w-[300px]">
+                <div className="flex items-center gap-0 ">
+                <div className='relative bg-[#FFF] p-[20px] rounded-full'>
+                    <h1 className='absolute bg-gradient-to-r top-[-10px] left-0 px-[10px] py-[3px] rounded-full from-[#D1ADFF] to-[#E7D5FF] '>1</h1>
+                    <IoIosCloudDownload />
+                    </div>
+                    <span className=" hidden md:block h-[3px] w-full bg-[#4A46FB1F] "></span>
+                </div>
+                <div className="flex flex-col gap-5 pr-[15px]">
+                    <h1 className=" md:text-[28px] text-[15px] leading-[130%] text-blackText font-[600]  ">Sign Up</h1>
+                    <p className="font-[400] leading-[130%] text-[12px] md:text-[16px] text-[#7F847D] ">Join our network by registering on the SplitEV app or website.</p>
+                </div>
+            </div>
+            <div className="flex flex-col gap-5 w-[300px] ">
+                <div className="flex items-center gap-0 ">
+                <div className='relative bg-[#FFF] p-[20px] rounded-full'>
+                    <h1 className='absolute bg-gradient-to-r top-[-10px] left-0 px-[10px] py-[3px] rounded-full from-[#D1ADFF] to-[#E7D5FF] '>1</h1>
+                    <IoIosCloudDownload />
+                    </div>
+                    <span className=" hidden md:block h-[3px] w-full bg-[#4A46FB1F] "></span>
+                </div>
+                <div className="flex flex-col gap-5 pr-[15px]">
+                    <h1 className=" md:text-[28px] text-[15px] leading-[130%] text-blackText font-[600]  ">Installation Support</h1>
+                    <p className="font-[400] leading-[130%] text-[12px] md:text-[16px] text-[#7F847D] ">We'll assist you in setting up your charging station, ensuring compatibility and safety. Our team is here to guide you every step of the way.</p>
+                </div>
+            </div>
+            <div className="flex flex-col gap-5  w-[300px]">
+                <div className="flex items-center gap-0 ">
+                <div className='relative bg-[#FFF] p-[20px] rounded-full'>
+                    <h1 className='absolute bg-gradient-to-r top-[-10px] left-0 px-[10px] py-[3px] rounded-full from-[#D1ADFF] to-[#E7D5FF] '>1</h1>
+                    <IoIosCloudDownload />
+                    </div>
+                   
+                </div>
+                <div className="flex flex-col gap-5 pr-[15px]">
+                    <h1 className=" md:text-[28px] text-[15px] leading-[130%] text-blackText font-[600]  ">Start Earning</h1>
+                    <p className="font-[400] leading-[130%] text-[12px] md:text-[16px] text-[#7F847D] ">Once your station is live, you're ready to welcome EV drivers. Our dynamic pricing model maximizes your earnings while offering competitive rates to users.</p>
+                </div>
+</div>
+        </div>
+        </div>
+        
+        <EarnAsYouCharge/>
+        <OurMobileApp />
+        <Map />
+        <SupportingYou/>
      </>
 }
 
-export default BlogHost
+export default BlogDriver
