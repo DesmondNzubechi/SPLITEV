@@ -33,7 +33,7 @@ export const EarnAsYouCharge = () => {
             </div>
 
         </div>
-        <div className='bg-lightBlue rounded-l-[1000px] self-stretch h-[250px]  w-[300px] '>
+        <div className='bg-lightBlue rounded-l-[1000px] self-stretch md:h-[250px]  w-[300px] '>
 
         </div>
         </div>

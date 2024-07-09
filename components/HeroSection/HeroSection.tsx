@@ -5,15 +5,6 @@ import heroImg from '../../public/images/heroImg.png';
 import Link from 'next/link';
 import Image from 'next/image';
 import availabilityBg from '../../public/images/focus-closeup-ev-car-and-charger-with-blur-background-for-progressive-concept.png'
-import splitEvImg from '../../public/images/splitevhere.png';
-import Nvidia from '../../public/images/nvidia.svg';
-import techstar from '../../public/images/techstar.svg';
-import innovation from '../../public/images/innovation studio.svg';
-import { LuArrowUpRight } from "react-icons/lu";
-import benefit from '../../public/images/benefits.svg';
-import flatRate from '../../public/images/unlimitedFlatRate.svg'
-import empowerCommunication from '../../public/images/empowerCommunity.svg';
-import sustainability from '../../public/images/sustainability.svg'
 import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from 'react-icons/go';
 import { ForHost } from '../ForHost/ForHost';
@@ -74,58 +65,6 @@ export const HeroSection = () => {
                 <p className='bg-white p-2 rounded-[15px]'>Join the community</p>
             </Link>
         </div>
-
-        
-
-        <div className='bg-[#E3E4E4] py-[50px] px-[30px] flex flex-col items-center justify-center gap-[30px] '>
-            <div className='grid grid-cols-3 gap-[30px] '>
-                <Image src={innovation} alt='innovation studios' />
-                <Image src={techstar} alt='techstars' />   
-                <Image src={Nvidia} alt='nvidia' />   
-            </div>
-            <div className='flex flex-col gap-2 items-center justify-center'>
-                <p className='text-[24px] font-[400] leading-[130%] uppercase text-[#7F847D]'>We make charging your electric vehicle</p>
-                <h1 className='text-[#92D839] text-[48px] font-[800] leading-[140%] uppercase '>as easy as charging your cell phone</h1>
-                <Link href='/' className='bg-navBg flex items-center gap-[16px] justify-center max-w-fit rounded-[25px] py-[10px] px-[20px] '>Read More <LuArrowUpRight  className='bg-black text-slate-50 p-1 text-[30px] rounded-full '/></Link>
-            </div>
-            <div>
-                <Image src={splitEvImg} alt='splitev image' />
-            </div>
-        </div>
-
-        
-
-        <div className='flex flex-col items-center justify-center gap-[50px] py-[50px] px-[30px] bg-[#F5F5F5] '>
-            <div className='flex flex-col gap-3 items-center justify-center'>
-                <div className='p-1 rounded-full bg-[#92D839]'>
-                <Image src={benefit} alt='benefit icon' />
-               </div>
-                
-                <h1 className='text-black text-[48px] font-[600] leading-[140%] '>Benefits of SplitEV</h1>
-                <p className='font-[500] leading-[130%] text-[22px] text-[#7F847D] '>Experience countless perks, unrivaled convenience and unbeatable reliability</p>
-            </div>
-            <div className='grid grid-cols-3 gap-[30px] '>
-                <div className='bg-anotherBg p-[20px] flex flex-col gap-[10px] items-center justify-center '>
-                    <Image src={flatRate} alt='unlimited flat rate charging' />
-                    <h1 className='text-[24px] font-[700] leading-[130%] text-black '>Unlimited Flat Rate Charging</h1>
-                    <p className=' text-[18px] font-[600] leading-[150%] text-[#7F847D] '>Our transparent pricing model means unlimited monthly EV charging. With SplitEV, you're in control of your EV charging.</p>
-
-                </div>
-                <div className='bg-anotherBg p-[20px] flex flex-col gap-[10px] items-center justify-center '>
-                    <Image src={empowerCommunication} alt='empower communities' />
-                    <h1 className='text-[24px] font-[700] leading-[130%] text-black '>Empower Communities</h1>
-                    <p className=' text-[18px] font-[600] leading-[150%] text-[#7F847D] '>We collaborate with property owners to offer charging solutions, fostering local economic growth and ensuring convenient charging <br /> <span className='text-[#92D839]'>for everyone.</span></p>
-
-                </div>
-                <div className='bg-anotherBg p-[20px] flex flex-col gap-[10px] items-center justify-center '>
-                    <Image src={sustainability} alt='sustainability' />
-                    <h1 className='text-[24px] font-[700] leading-[130%] text-black '>Sustainability Meets Convenience</h1>
-                    <p className=' text-[18px] font-[600] leading-[150%] text-[#7F847D] '>Energize your vehicle, fueling the movement toward a more <br /> <span className='text-[#92D839]'>sustainable future.</span></p>
-
-</div>
-            </div>
-        </div>
-
         
 
 

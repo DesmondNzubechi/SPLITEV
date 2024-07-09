@@ -11,6 +11,7 @@ import { JoiningIsSimple } from '@/components/JoiningIsSimple/JoiningIsSimple'
 import { JoinGreenCommunity } from '@/components/JoinGreenCommunity/JoinGreenCommunity'
 import { WhyChoseSplitEv } from '@/components/whyChooseSplitEv/WhyChoseSplitEv'
 import moneyBag from '../../public/images/moneyBag.svg'
+
 function BlogHost() {
     return <>
     <div className=' py-[150px] px-[30px] flex flex-col gap-[50px] items-center justify-center'>
