@@ -9,6 +9,8 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { OtherCompanies, WeMakeChargingEasy } from "../WeMakeChargingEasy/WeMakeChargingEasy";
 import { BenefitOfSplitEv } from "../BenefitOfSplitEv/BenefitOfSplitEv";
 import { UnlockTheFullPottential } from "../UnlockTheFullPottential/UnlockTheFullPottential";
+import { MaximizeYourEarning } from "../MaximizeYourEarning/maximizeYourEarning";
+import { EstimatedDemand } from "../estimatedDemand/estimatedDemand";
 
 export const HeroSectionHost = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -86,10 +88,10 @@ export const HeroSectionHost = () => {
                 </div>
             </div>
             <div className='flex flex-col absolute top-[50%] right-[30px] z-[1000]  items-center gap-5 z-[10] '>
-                    <Link className='bg-blackTransparent backdrop-saturate-[100px] shadow-2xl   p-2 rounded-full' href=''><MdEmail className='text-white  '/></Link>
-                    <Link className='bg-blackTransparent backdrop-saturate-[100px] shadow-2xl  p-2 rounded-full' href=''><FaXTwitter className='text-white  ' /></Link>
-                    <Link className='bg-blackTransparent backdrop-saturate-[100px] shadow-2xl  p-2 rounded-full' href=''><FaLinkedin className='text-white  '/></Link>
-                    <Link className='bg-blackTransparent backdrop-saturate-[100px] shadow-2xl  p-2 rounded-full' href=''><FaSquareInstagram className='text-white '/></Link>
+                    <Link className='bg-whiteTp backdrop-saturate-[100px] shadow-2xl   p-2 rounded-full' href=''><MdEmail className='text-white  '/></Link>
+                    <Link className='bg-whiteTp backdrop-saturate-[100px] shadow-2xl  p-2 rounded-full' href=''><FaXTwitter className='text-white  ' /></Link>
+                    <Link className='bg-whiteTp backdrop-saturate-[100px] shadow-2xl  p-2 rounded-full' href=''><FaLinkedin className='text-white  '/></Link>
+                    <Link className='bg-whiteTp backdrop-saturate-[100px] shadow-2xl  p-2 rounded-full' href=''><FaSquareInstagram className='text-white '/></Link>
                 </div>
       </div>
       <div>
@@ -97,7 +99,9 @@ export const HeroSectionHost = () => {
       </div>
       <BenefitOfSplitEv />
       <OtherCompanies />
-      <UnlockTheFullPottential/>
+      <UnlockTheFullPottential />
+      <MaximizeYourEarning />
+      <EstimatedDemand/>
       </>
     );
 };
