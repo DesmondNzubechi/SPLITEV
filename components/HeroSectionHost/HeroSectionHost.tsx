@@ -106,8 +106,12 @@ export const HeroSectionHost = () => {
       <BenefitOfSplitEv />
       <OtherCompanies />
       <UnlockTheFullPottential />
+      <div className="md:my-[-250px] ">
       <MaximizeYourEarning />
+      </div>
+      <div className="md:mt-[200px] ">
       <EstimatedDemand />
+      </div>
       <InceptionProgram />
       <JoinTheSplitEvNetwork />
       <Subscription />

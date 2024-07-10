@@ -17,7 +17,7 @@ export const UnlockTheFullPottential = () => {
         </div>
         <div style={{
             background: `url(${theFullPottential.src})`,
-           backgroundSize : "contain",
+          
             backgroundRepeat : "no-repeat"
         }} className=' min-h-[702px] md:bg-contain bg-right-[10px] items-center flex px-[30px] py-[50px] flex-col gap-[20px] relative rounded-[20px] '>
             <div className='flex max-w-[300px] h-[180px] gap-1 md:absolute right-[34%] flex-col items-start backdrop-blur-[10px] bg-whiteTp p-[20px] border rounded-[20px] '>

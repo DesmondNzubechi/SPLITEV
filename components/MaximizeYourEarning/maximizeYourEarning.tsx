@@ -65,5 +65,5 @@ export const MaximizeYourEarning = () => {
                 </div>
             </div>
         </div>
-    </div>
+  </div>
 }
