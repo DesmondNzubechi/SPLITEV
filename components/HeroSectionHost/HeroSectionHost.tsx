@@ -16,6 +16,7 @@ import { Subscription } from "../Subscription/Subscription";
 import { GreenerFuture } from "../GreenerFuture/GreenerFuture";
 import { UserFeedback } from "../UserFeedback/UserFeedback";
 import { ReviewAndQuestion } from "../ReviewAndQuestion/ReviewAndQuestion";
+import { UserFriendlyApp } from "../userFriendlyApp/userFriendlyApp";
 
 export const HeroSectionHost = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -112,7 +113,8 @@ export const HeroSectionHost = () => {
       <Subscription />
       <GreenerFuture />
       <UserFeedback />
-      <ReviewAndQuestion/>
+      <ReviewAndQuestion />
+      <UserFriendlyApp/>
       </>
     );
 };
