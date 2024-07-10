@@ -17,7 +17,7 @@ export const Footer = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
-    }} className='relative after:absolute relative px-[30px] pt-[150px] pb-[20px] after:backdrop-blur-[5px] md:flex-row flex flex-col justify-center gap-[100px] after:w-full after:left-o after:right-0 after:top-0 after:bottom-0 after:bg-blackTransparent '>
+    }} className='relative right-0 w-full after:absolute relative px-[30px] pt-[150px] pb-[20px] after:backdrop-blur-[5px] md:flex-row flex flex-col justify-center gap-[100px] after:w-full after:left-0 after:right-0 after:top-0 after:bottom-0 after:bg-blackTransparent '>
        
         <div className='bg-primaryBg absolute flex justify-center md:rounded-full rounded-[100px] top-[-300px] md:top-[-250px] z-[10] left-[30px] right-[30px] md:right-[100px] md:left-[100px] p-[20px]'>
             <div className='flex items-center md:flex-row  flex-col bg-anotherBg shadow-md rounded-[100px] md:rounded-full w-full border border-[3px] gap-[32px] py-[30px] md:py-[100px] px-[30px] '>
