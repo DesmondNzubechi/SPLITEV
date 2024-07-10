@@ -3,7 +3,7 @@ import youngGirlCharging from '../../public/images/youngW.png';
 import Link from 'next/link';
 
 export const JoinTheSplitEvNetwork = () => {
-    return <div className='px-[30px]   py-[50px] '>
+    return <div className='px-[30px] justify-center flex items-center  py-[50px] '>
         
         <div style={{
             background: `url(${youngGirlCharging.src})`,

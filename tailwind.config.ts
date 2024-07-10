@@ -16,6 +16,7 @@ const config: Config = {
         "blackText": "#0C1101",
         "navBg": "rgba(255, 255, 255, 0.60)",
         "anotherBg": "rgba(255, 255, 255, 0.75)",
+        "whiteHalf": "rgba(255, 255, 255, 0.50)",
         'whiteBg': "rgba(255, 255, 255, 0.92)",
         'whiteTp' : "rgba(255, 255, 255, 0.10)",
         "textPrimary": "#7F847D",

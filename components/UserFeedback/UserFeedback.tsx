@@ -8,10 +8,24 @@ export const UserFeedback = () => {
         backgroundRepeat: 'no-repeat',
             backgroundSize: "cover"
         }}
-            className='flex px-[30px] w-full bg-fit bg-left bg-contain md:pb-[100px]  py-[50px] flex-col justify-end gap-5 items-start '
-        >
-            <h1 className='text-[20px] md:text-[30px] font-[700] leading-[130%] text-[#FFF]  '>Join the SplitEV Network Today</h1>
-            <p className='text-[12px] max-w-[592px] font-[600] text-[#FFF] md:text-[18px] leading-[150%]  '>Start your journey towards uncapped earning potential. Listing your charger on SplitEV not only helps you generate passive income but also contributes to a greener, more sustainable future by expanding the EV charging infrastructure.</p>
-            <Link href='/' className='px-[18px] hover:bg-slate-100  w-fit flex flex-row gap-[20px] items-center py-[5px] rounded-[22px] bg-[#FFF] text-blackText text-[15px] md:text-[18px] leading-[150%] font-[600] shadow-2xl'>Sign Up Now and Start Earning!</Link>
+            className='flex px-[30px] w-full bg-fit bg-left bg-contain  my-[100px]  py-[50px] flex-col justify-end gap-5 items-start '
+    >
+        <div className='bg-[#97CB63] p-2 rounded-full'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+  <g clip-path="url(#clip0_12998_25048)">
+    <path d="M32.0078 21.168H23.3359C20.3475 21.168 17.916 23.5995 17.916 26.5879V35.2598C17.916 35.8589 18.4008 36.3438 19 36.3438H32.0078C34.9962 36.3438 37.5 33.9122 37.5 30.9238V26.5879C37.5 23.5995 34.9962 21.168 32.0078 21.168ZM32.0078 32.0078H23.3359C22.7368 32.0078 22.252 31.523 22.252 30.9238C22.252 30.3247 22.7368 29.8398 23.3359 29.8398H32.0078C32.607 29.8398 33.0918 30.3247 33.0918 30.9238C33.0918 31.523 32.607 32.0078 32.0078 32.0078ZM32.0078 27.6719H23.3359C22.7368 27.6719 22.252 27.187 22.252 26.5879C22.252 25.9887 22.7368 25.5039 23.3359 25.5039H32.0078C32.607 25.5039 33.0918 25.9887 33.0918 26.5879C33.0918 27.187 32.607 27.6719 32.0078 27.6719Z" fill="black"/>
+    <path d="M8.16016 21.168C3.97663 21.168 0.5 24.5723 0.5 28.7559C0.5 32.9394 3.97663 36.3438 8.16016 36.3438C12.3437 36.3438 15.748 32.9394 15.748 28.7559C15.748 24.5723 12.3437 21.168 8.16016 21.168ZM10.3281 32.0078C9.72897 32.0078 9.24414 31.523 9.24414 30.9238C9.24414 30.3258 8.75823 29.8398 8.16016 29.8398C7.56209 29.8398 7.07617 30.3258 7.07617 30.9238C7.07617 31.523 6.59134 32.0078 5.99219 32.0078C5.39303 32.0078 4.9082 31.523 4.9082 30.9238C4.9082 29.1306 6.36696 27.6719 8.16016 27.6719C9.95336 27.6719 11.4121 29.1306 11.4121 30.9238C11.4121 31.523 10.9273 32.0078 10.3281 32.0078Z" fill="black"/>
+    <path d="M29.8398 1.65625C25.6563 1.65625 22.252 5.06061 22.252 9.24414C22.252 13.4277 25.6563 16.832 29.8398 16.832C34.0234 16.832 37.5 13.4277 37.5 9.24414C37.5 5.06061 34.0234 1.65625 29.8398 1.65625ZM29.8398 12.4961C28.0466 12.4961 26.5879 11.0373 26.5879 9.24414C26.5879 8.64499 27.0727 8.16016 27.6719 8.16016C28.271 8.16016 28.7559 8.64499 28.7559 9.24414C28.7559 9.84221 29.2418 10.3281 29.8398 10.3281C30.4379 10.3281 30.9238 9.84221 30.9238 9.24414C30.9238 8.64499 31.4087 8.16016 32.0078 8.16016C32.607 8.16016 33.0918 8.64499 33.0918 9.24414C33.0918 11.0373 31.633 12.4961 29.8398 12.4961Z" fill="black"/>
+    <path d="M5.99219 16.832H19C19.5992 16.832 20.084 16.3472 20.084 15.748V7.07617C20.084 4.08777 17.6525 1.65625 14.6641 1.65625H5.99219C3.00379 1.65625 0.5 4.08777 0.5 7.07617V11.4121C0.5 14.4005 3.00379 16.832 5.99219 16.832ZM5.99219 5.99219H14.6641C15.2632 5.99219 15.748 6.47702 15.748 7.07617C15.748 7.67533 15.2632 8.16016 14.6641 8.16016H5.99219C5.39303 8.16016 4.9082 7.67533 4.9082 7.07617C4.9082 6.47702 5.39303 5.99219 5.99219 5.99219ZM5.99219 10.3281H14.6641C15.2632 10.3281 15.748 10.813 15.748 11.4121C15.748 12.0113 15.2632 12.4961 14.6641 12.4961H5.99219C5.39303 12.4961 4.9082 12.0113 4.9082 11.4121C4.9082 10.813 5.39303 10.3281 5.99219 10.3281Z" fill="black"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_12998_25048">
+      <rect width="37" height="37" fill="white" transform="translate(0.5 0.5)"/>
+    </clipPath>
+  </defs>
+</svg>
+        </div>
+            <h1 className='text-[20px] md:text-[30px] font-[700] leading-[130%] text-[#FFF]  '>User feedback</h1>
+            <p className='text-[12px] max-w-[592px] font-[600] text-[#FFF] md:text-[18px] leading-[150%]  '>By joining <span className='text-[#97CB63] '> SplitEV</span>, you're contributing to a greener future and making EV charging as convenient as a gas station visit. Share with us your experience!</p>
 </div>
 }

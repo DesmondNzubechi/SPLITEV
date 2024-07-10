@@ -15,6 +15,7 @@ import { JoinTheSplitEvNetwork } from "../JoinTheSplitEvNetwork/JoinTheSplitEvNe
 import { Subscription } from "../Subscription/Subscription";
 import { GreenerFuture } from "../GreenerFuture/GreenerFuture";
 import { UserFeedback } from "../UserFeedback/UserFeedback";
+import { ReviewAndQuestion } from "../ReviewAndQuestion/ReviewAndQuestion";
 
 export const HeroSectionHost = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -110,7 +111,8 @@ export const HeroSectionHost = () => {
       <JoinTheSplitEvNetwork />
       <Subscription />
       <GreenerFuture />
-      <UserFeedback/>
+      <UserFeedback />
+      <ReviewAndQuestion/>
       </>
     );
 };
