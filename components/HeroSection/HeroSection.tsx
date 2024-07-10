@@ -137,7 +137,6 @@ export const HeroSection = () => {
         </div>
         
         <ForHost />
-        <Subscription />
         <ExperienceTheSplitEv />
         <ForDrivers/>
         </>

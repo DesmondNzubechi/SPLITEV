@@ -9,7 +9,7 @@ export const JoinGreenCommunity = () => {
             background: `url(${bg.src})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            backgroundSize : "cover"
+            backgroundSize : "cover" 
         }} className=' h-full rounded-[20px] py-[50px] flex flex-col gap-5 items-center px-[50px] w-full'>
             <Image src={frame} alt='' />
             <h1 className='text-center text-[25px] md:text-[48px] leading-[140%] '>Join a Green Community</h1>

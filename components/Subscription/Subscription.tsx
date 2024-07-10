@@ -1,7 +1,7 @@
 import subIcon from '../../public/images/subscription.svg';
-import locationIcon from '../../public/images/everywhere.svg';
-import smartIcon from '../../public/images/smart.svg';
-import unlimitedIcon from '../../public/images/unlimitedFreedom.svg';
+import locationIcon from '../../public/images/locationIcon.svg';
+import smartIcon from '../../public/images/bulb.svg';
+import unlimitedIcon from '../../public/images/infinity.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GoArrowRight } from 'react-icons/go';
@@ -44,9 +44,9 @@ export const Subscription = () => {
                </Link>
             </div>
             <div className='flex max-w-[400px] border-l-2 p-[20px] flex-col gap-[10px] items-start '>
-                <Image src={locationIcon} alt='location' />
-                <h1 className='text-blackText text-[15px] font-[700] leading-[130%] md:text-[24px] '>Everywhere You Go</h1>
-                <p className='text-primaryText text-[12px] md:text-[16px]'>Our expansive network means you're never far from a charge. City streets, rural routes, or hidden getaways, SplitEV's chargers are there. Just open the app, find a charger, and plug in. It’s that simple!</p>
+                <Image src={unlimitedIcon} alt='location' />
+                <h1 className='text-blackText text-[15px] font-[700] leading-[130%] md:text-[24px] '>Unlimited Charging, Unlimited Freedom</h1>
+                <p className='text-primaryText text-[12px] md:text-[16px]'>No more counting kilowatts or watching your battery like a hawk. Our Unlimited Charging plan offers you the freedom to charge your EV as much as you need, whenever you need. Whether you're commuting, road-tripping, or just out and about, we've got you covered.</p>
                 
                 <Link href='/' className='flex  items-center gap-[20px] text-tickGreen px-[10px] py-[8px] rounded-full  '>
                     Learn more

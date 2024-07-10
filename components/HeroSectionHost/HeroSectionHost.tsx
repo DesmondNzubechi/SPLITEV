@@ -12,6 +12,9 @@ import { UnlockTheFullPottential } from "../UnlockTheFullPottential/UnlockTheFul
 import { MaximizeYourEarning } from "../MaximizeYourEarning/maximizeYourEarning";
 import { EstimatedDemand } from "../estimatedDemand/estimatedDemand";
 import { JoinTheSplitEvNetwork } from "../JoinTheSplitEvNetwork/JoinTheSplitEvNetwork";
+import { Subscription } from "../Subscription/Subscription";
+import { GreenerFuture } from "../GreenerFuture/GreenerFuture";
+import { UserFeedback } from "../UserFeedback/UserFeedback";
 
 export const HeroSectionHost = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -104,7 +107,10 @@ export const HeroSectionHost = () => {
       <MaximizeYourEarning />
       <EstimatedDemand />
       <InceptionProgram />
-      <JoinTheSplitEvNetwork/>
+      <JoinTheSplitEvNetwork />
+      <Subscription />
+      <GreenerFuture />
+      <UserFeedback/>
       </>
     );
 };
