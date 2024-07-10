@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import vector from '../../public/images/Vector.svg'
+import vector from '../../public/images/ector.svg'
 import coinIcon from '../../public/images/tabler_coins.svg'
 import checkIcon from '../../public/images/check.svg'
 import userIcon from '../../public/images/icon_user.svg'

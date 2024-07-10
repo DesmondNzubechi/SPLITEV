@@ -6,8 +6,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="overflow-x-hidden bg-primaryBg">
-        <DesktopNav/>
+      <body className="overflow-x-hidden w-full bg-primaryBg">
+       
         <Main />
         <Footer/>
         <NextScript />
