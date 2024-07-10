@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import vector from '../../public/images/Vector.svg'
+import vector from '../../public/images/vector.svg'
 import coinIcon from '../../public/images/tabler_coins.svg'
 import checkIcon from '../../public/images/check.svg'
 import userIcon from '../../public/images/icon_user.svg'
@@ -16,10 +16,10 @@ export const UnlockTheFullPottential = () => {
             </div>
         </div>
         <div style={{
-            background: `url(${theFullPottential.src})`,
-          
+            backgroundImage: `url(${theFullPottential.src})`,
+         
             backgroundRepeat : "no-repeat"
-        }} className=' min-h-[702px] md:bg-contain bg-right-[10px] items-center flex px-[30px] py-[50px] flex-col gap-[20px] relative rounded-[20px] '>
+        }} className=' min-h-[702px] bg-cover md:bg-contain bg-no-repeat  bg-right-[10px] items-center flex px-[30px] py-[50px] flex-col gap-[20px] relative rounded-[20px] '>
             <div className='flex max-w-[300px] h-[180px] gap-1 md:absolute right-[34%] flex-col items-start backdrop-blur-[10px] bg-whiteTp p-[20px] border rounded-[20px] '>
                 <Image src={coinIcon} className='w-[30px] ' alt='coin icon' />
                 <h1 className='font-[700] text-[20px] leading-[130%] text-[#FFFFFF] '>Earn on Your Terms</h1>

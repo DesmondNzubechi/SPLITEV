@@ -17,6 +17,7 @@ import { GreenerFuture } from "../GreenerFuture/GreenerFuture";
 import { UserFeedback } from "../UserFeedback/UserFeedback";
 import { ReviewAndQuestion } from "../ReviewAndQuestion/ReviewAndQuestion";
 import { UserFriendlyApp } from "../userFriendlyApp/userFriendlyApp";
+import InteractiveMap from "../anotherMap/anotherMap";
 
 export const HeroSectionHost = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -106,10 +107,10 @@ export const HeroSectionHost = () => {
       <BenefitOfSplitEv />
       <OtherCompanies />
       <UnlockTheFullPottential />
-      <div className="md:my-[-250px] ">
+      <div className="md:my-[-200px] ">
       <MaximizeYourEarning />
       </div>
-      <div className="md:mt-[200px] ">
+      <div className="md:mt-[150px] ">
       <EstimatedDemand />
       </div>
       <InceptionProgram />
@@ -118,7 +119,8 @@ export const HeroSectionHost = () => {
       <GreenerFuture />
       <UserFeedback />
       <ReviewAndQuestion />
-      <UserFriendlyApp/>
+      <UserFriendlyApp />
+      <InteractiveMap/>
       </>
     );
 };
