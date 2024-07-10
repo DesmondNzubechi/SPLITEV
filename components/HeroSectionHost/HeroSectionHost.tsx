@@ -6,11 +6,12 @@ import { MdEmail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
-import { OtherCompanies, WeMakeChargingEasy } from "../WeMakeChargingEasy/WeMakeChargingEasy";
+import { InceptionProgram, OtherCompanies, WeMakeChargingEasy } from "../WeMakeChargingEasy/WeMakeChargingEasy";
 import { BenefitOfSplitEv } from "../BenefitOfSplitEv/BenefitOfSplitEv";
 import { UnlockTheFullPottential } from "../UnlockTheFullPottential/UnlockTheFullPottential";
 import { MaximizeYourEarning } from "../MaximizeYourEarning/maximizeYourEarning";
 import { EstimatedDemand } from "../estimatedDemand/estimatedDemand";
+import { JoinTheSplitEvNetwork } from "../JoinTheSplitEvNetwork/JoinTheSplitEvNetwork";
 
 export const HeroSectionHost = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -101,7 +102,9 @@ export const HeroSectionHost = () => {
       <OtherCompanies />
       <UnlockTheFullPottential />
       <MaximizeYourEarning />
-      <EstimatedDemand/>
+      <EstimatedDemand />
+      <InceptionProgram />
+      <JoinTheSplitEvNetwork/>
       </>
     );
 };

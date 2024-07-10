@@ -4,6 +4,7 @@ import techstar from '../../public/images/techstar.svg';
 import innovation from '../../public/images/innovation studio.svg';
 import { LuArrowUpRight } from "react-icons/lu";
 import Link from 'next/link';
+import layer1 from '../../public/images/Layer_1.svg';
 import Image from 'next/image';
 
 export const WeMakeChargingEasy = () => {
@@ -26,6 +27,19 @@ export const OtherCompanies = () => {
     <Image src={innovation} alt='innovation studios' />
     <Image src={techstar} alt='techstars' />   
     <Image src={Nvidia} alt='nvidia' />   
+        </div>
+        </div>
+}
+
+export const InceptionProgram = () => {
+    return <div className='px-[30px] w-full py-[20px] bg-[#FFF] '>
+        <div className='flex justify-around gap-[40px]  '>
+            <div className='flex items-center gap-5'>
+                <Image src={Nvidia} alt='nvidia' /> 
+            <p className='text-[25px] leading-[130%] font-[500] text-blackText px-[30px] border-l-[3px] '>Inception Program</p>    
+            </div>
+    <Image src={layer1} alt='innovation studios' />  
+     
         </div>
         </div>
 }
