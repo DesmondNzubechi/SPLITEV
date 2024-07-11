@@ -8,13 +8,28 @@ import layer1 from '../../public/images/Layer_1.svg';
 import Image from 'next/image';
 
 export const WeMakeChargingEasy = () => {
-    return     <div className='bg-primaryBg py-[50px] px-[30px] flex flex-col items-center justify-center gap-[30px] '>
+    return     <div className='bg-primaryBg py-[50px] px-[30px] flex flex-col items-center justify-center  gap-[30px] '>
     <div className='flex flex-col gap-2 items-center justify-center'>
-        <p className='text-[24px] font-[400] leading-[130%] uppercase text-[#7F847D]'>We make charging your electric vehicle</p>
-        <h1 className='text-[#92D839] text-[48px] font-[800] leading-[140%] uppercase '>as easy as charging your cell phone</h1>
+        <p className='text-[24px] relative z-1 font-[400] leading-[130%] uppercase text-[#7F847D]'>We make charging your electric vehicle</p>
+        <h1 className='text-[#92D839] relative z-1 text-[48px] font-[800] leading-[140%] uppercase '>as easy as charging your cell phone</h1>
         {/* <Link href='/' className='bg-navBg flex items-center gap-[16px] justify-center max-w-fit rounded-[25px] py-[10px] px-[20px] '>Read More <LuArrowUpRight  className='bg-black text-slate-50 p-1 text-[30px] rounded-full '/></Link> */}
     </div>
-    <div>
+    <div className=''>
+        <Image src={splitEvImg} alt='splitev image' />
+    </div>
+</div>
+
+}
+
+
+export const WeMakeChargingEasyForHost = () => {
+    return     <div className='bg-primaryBg py-[50px] px-[30px] flex flex-col items-center justify-center  gap-[30px] '>
+    <div className='flex flex-col gap-2 items-end justify-center'>
+        <p className='md:text-[20px] text-[15px] relative z-1 font-[400] leading-[130%] uppercase text-[#7F847D] text-end'>We make charging your electric vehicle</p>
+        <h1 className='text-[#92D839] relative z-1 text-[25px] md:text-[30px] font-[800] leading-[140%] uppercase text-end'>as easy as charging your cell phone</h1>
+        {/* <Link href='/' className='bg-navBg flex items-center gap-[16px] justify-center max-w-fit rounded-[25px] py-[10px] px-[20px] '>Read More <LuArrowUpRight  className='bg-black text-slate-50 p-1 text-[30px] rounded-full '/></Link> */}
+    </div>
+    <div className='self-center'>
         <Image src={splitEvImg} alt='splitev image' />
     </div>
 </div>

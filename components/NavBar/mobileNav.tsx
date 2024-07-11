@@ -11,7 +11,7 @@ export const MobileNav = () => {
   const [theNav, setTheNav] = useState(false);
 
   return (
-    <nav className='flex md:hidden z-[100] justify-center fixed w-full left-0 right-0 top-0 py-[30px] items-center gap-5 px-[20px] '>
+    <nav className='flex md:hidden z-[2000] justify-center fixed w-full left-0 right-0 top-0 py-[30px] items-center gap-5 px-[20px] '>
       <Link href='/' className=' bg-navBg backdrop-blur-[20px] p-[20px] gap-[5px] rounded-full shadow-md '>
         <Image className='w-[26px]' src={splitevLogo} alt='splitev logo' width={26} height={26} />
       </Link>
