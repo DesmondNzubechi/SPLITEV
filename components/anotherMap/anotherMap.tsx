@@ -37,7 +37,7 @@ const InteractiveMap = () => {
                 <p className='text-textPrimary max-w-[700px] text-[15px] md:text-[20px] leading-[130%] font-[400] '>The number of electric vehicles on the road is increasing day by day! We've mapped out the largest distribution of EVs to identify potential customers for your charging station.</p>
             </div>
         <div className="relative h-[100vh]">
-             <svg className='w-full h-[100vh]' width="1000" height="1000" viewBox="0 0 1414 1223" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <svg className='w-full h-[100vh]'  viewBox="0 0 1414 1223" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M648.39 47.7165C648.39 50.3109 645.905 52.4165 642.843 52.4165C639.78 52.4165 637.295 50.3109 637.295 47.7165C637.295 45.1222 639.78 43.0166 642.843 43.0166C645.905 43.0166 648.39 45.1222 648.39 47.7165Z" fill="#8B46FB" fill-opacity="0.12"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M648.39 61.8142C648.39 64.4085 645.905 66.5141 642.843 66.5141C639.78 66.5141 637.295 64.4085 637.295 61.8142C637.295 59.2198 639.78 57.1143 642.843 57.1143C645.905 57.1143 648.39 59.2198 648.39 61.8142Z" fill="#8B46FB" fill-opacity="0.12"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M665.033 47.7165C665.033 50.3109 662.547 52.4165 659.485 52.4165C656.423 52.4165 653.938 50.3109 653.938 47.7165C653.938 45.1222 656.423 43.0166 659.485 43.0166C662.547 43.0166 665.033 45.1222 665.033 47.7165Z" fill="#8B46FB" fill-opacity="0.12"/>

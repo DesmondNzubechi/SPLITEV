@@ -3,9 +3,9 @@ import vector from '../../public/images/theVector.png'
 import coinIcon from '../../public/images/tabler_coins.svg'
 import checkIcon from '../../public/images/check.svg'
 import userIcon from '../../public/images/icon_user.svg'
-
 import theFullPottential from '../../public/images/fullPottential.png'
 import Link from 'next/link'
+
 export const UnlockTheFullPottential = () => {
     return <div className='py-[100px] bg-primaryBg'>
         <div className='px-[30px] pb-[20px] '>

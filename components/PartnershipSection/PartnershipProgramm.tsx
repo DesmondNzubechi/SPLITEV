@@ -12,7 +12,7 @@ export const PartnershipProgram = () => {
     <Image src={hostImg1} alt='car' />
     </div>
     
-                <div className='flex  absolute flex-row items-center gap-2 left-[10%] right-[10%] gap-[10px] rounded-full items-start px-[30px] py-[20px]  '>
+                <div className='flex  absolute flex-row items-center gap-2 left-[10px] right-[10px] gap-[10px] rounded-full items-start px-[30px] py-[20px]  '>
                     <div className='flex border flex-col border-[5px] border-tickGreen gap-[10px] rounded-full items-start px-[30px] py-[20px] bg-anotherBg '>
                     <h1 className='text-tickGreen font-[500] leading-[130%] text-[20px] md:text-[30px] '>
         SplitEV’s Hosts Partnership Program

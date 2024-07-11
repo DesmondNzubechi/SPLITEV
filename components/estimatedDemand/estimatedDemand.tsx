@@ -2,7 +2,7 @@ import clockIcon from '../../public/images/clock.svg';
 import Image from 'next/image';
 
 export const EstimatedDemand = () => {
-    return  <div className='flex flex-col gap-[48px] items-center '>
+    return  <div className='flex flex-col gap-y-[48px] items-center '>
     <h1 className='text-[20px] font-[600] leading-[130%] '>Level of estimated demand</h1>
     <div className='bg-white p-[20px] rounded-[60px] shadow-2xl'>
     <div className='flex items-center gap-[40px] rounded-[30px] px-[20px] py-[10px] justify-between p-[5px] shadow bg-bgWhite '>

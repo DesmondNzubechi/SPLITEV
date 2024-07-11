@@ -70,7 +70,7 @@ export const HeroSectionHost = () => {
   </defs>
             </svg>
             
-            <svg className="absolute top-0 z-[50] md:right-0" xmlns="http://www.w3.org/2000/svg" width="950" height="838" viewBox="0 0 950 838" fill="none">
+            <svg className="absolute bottom-0 md:top-0 z-[50] md:right-0" xmlns="http://www.w3.org/2000/svg" width="950" height="838" viewBox="0 0 950 838" fill="none">
   <path d="M838 0L0 838H112L950 0H838Z" fill="url(#paint0_linear_13214_94217)"/>
   <defs>
     <linearGradient id="paint0_linear_13214_94217" x1="920.998" y1="-5.46318e-05" x2="82.4889" y2="837.999" gradientUnits="userSpaceOnUse">
@@ -94,7 +94,7 @@ export const HeroSectionHost = () => {
             </Link>
                 </div>
             </div>
-            <div className='flex flex-col absolute top-[50%] right-[30px] z-[1000]  items-center gap-5 z-[10] '>
+            <div className='flex flex-col absolute top-[50%] right-[30px] z-[1000] backdrop-blur-[20px]  items-center gap-5 z-[10] '>
                     <Link className='bg-whiteTp backdrop-saturate-[100px] shadow-2xl   p-2 rounded-full' href=''><MdEmail className='text-white  '/></Link>
                     <Link className='bg-whiteTp backdrop-saturate-[100px] shadow-2xl  p-2 rounded-full' href=''><FaXTwitter className='text-white  ' /></Link>
                     <Link className='bg-whiteTp backdrop-saturate-[100px] shadow-2xl  p-2 rounded-full' href=''><FaLinkedin className='text-white  '/></Link>
@@ -118,7 +118,7 @@ export const HeroSectionHost = () => {
       <Subscription />
       <GreenerFuture />
       <UserFeedback />
-     
+     <ReviewAndQuestion/>
       <UserFriendlyApp />
       <InteractiveMap/>
       </>
