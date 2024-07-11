@@ -8,7 +8,7 @@ import layer1 from '../../public/images/Layer_1.svg';
 import Image from 'next/image';
 
 export const WeMakeChargingEasy = () => {
-    return     <div className='bg-[#E3E4E4] py-[50px] px-[30px] flex flex-col items-center justify-center gap-[30px] '>
+    return     <div className='bg-primaryBg py-[50px] px-[30px] flex flex-col items-center justify-center gap-[30px] '>
     <div className='flex flex-col gap-2 items-center justify-center'>
         <p className='text-[24px] font-[400] leading-[130%] uppercase text-[#7F847D]'>We make charging your electric vehicle</p>
         <h1 className='text-[#92D839] text-[48px] font-[800] leading-[140%] uppercase '>as easy as charging your cell phone</h1>
