@@ -7,7 +7,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="bg-primaryBg overflow-x-hidden">
+      <body className="bg-primaryBg md:mr-0 mr-[-100px] overflow-x-hidden">
         <DesktopNav />
         <MobileNav/>
         <Main />
