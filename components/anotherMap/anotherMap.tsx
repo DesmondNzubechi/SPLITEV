@@ -2068,7 +2068,8 @@ const InteractiveMap = () => {
             )}
             </div>
             <div className='flex flex-col text-center py-[40px] mb-[100px] gap-[10px] items-center justify-center'>
-                <Image src={checkIcon} alt='check icon' />
+                <Image width={50}
+      height={50} src={checkIcon} alt='check icon' />
                 <h1 className='text-blackText text-[25px] md:text-[48px] font-[600] leading-[140%] '>Safety First</h1>
                 <p className='text-textPrimary max-w-[700px] text-[15px] md:text-[20px] leading-[130%] font-[400] '>Built with your safety in mind, featuring weatherproof design and advanced electrical protections.</p>
                 <Link href='/' className='bg-[#000000] text-slate-100 py-[10px] gap-2 items-center px-[30px] rounded-full flex items-center '>Read more <Image src={arrow} alt='arrow icon'/> </Link>

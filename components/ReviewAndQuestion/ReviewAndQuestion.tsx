@@ -60,7 +60,7 @@ export const ReviewAndQuestion = () => {
         </div>
         </div>
         
-        <svg className='absolute top-[30px] left-0 ' xmlns="http://www.w3.org/2000/svg" width="1918" height="686" viewBox="0 0 1918 686" fill="none">
+        <svg className='absolute top-[30px] left-0 right-0 w-full' xmlns="http://www.w3.org/2000/svg" width="1918" height="686" viewBox="0 0 1918 686" fill="none">
   <path d="M-2 388.875L374.699 9.24418C380.332 3.56772 387.998 0.375 395.995 0.375H1917.5V60.375C1917.5 76.9435 1904.07 90.375 1887.5 90.375H602.963C594.985 90.375 587.335 93.5531 581.706 99.2065L-2 685.375V388.875Z" fill="url(#paint0_linear_13441_93505)" fill-opacity="0.5"/>
   <defs>
     <linearGradient id="paint0_linear_13441_93505" x1="26.0348" y1="219.345" x2="2683.27" y2="100.358" gradientUnits="userSpaceOnUse">

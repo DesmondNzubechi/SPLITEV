@@ -7,8 +7,9 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body className="overflow-x-hidden w-full flex flex-col justify-center bg-primaryBg">
+        <DesktopNav/>
         <Main />
-        <Footer/>
+      <Footer/>
         <NextScript />
       </body>
     </Html>
