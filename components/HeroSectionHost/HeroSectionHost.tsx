@@ -108,8 +108,8 @@ export const HeroSectionHost = () => {
         <Image src={blackBg} className="absolute md:w-[700px] z-1 left-[-50px] md:left-[-250px] top-[-20px]  " alt="black background" />
         <WeMakeChargingEasyForHost/>
       </div>
+      <OtherCompanies/>
       <BenefitOfSplitEv />
-      <OtherCompanies />
       <UnlockTheFullPottential />
       <div className="md:my-[-200px] ">
       <MaximizeYourEarning />

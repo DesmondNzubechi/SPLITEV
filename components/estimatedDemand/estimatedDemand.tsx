@@ -18,7 +18,7 @@ export const EstimatedDemand = () => {
             <p className='font-[500] text-[16px] leading-[130%] text-textPrimary '>A DAY</p>
 </div>
         <div className='relative'>
-    <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="240" viewBox="0 0 240 240" fill="none">
 <circle cx="120" cy="120" r="120" fill="url(#paint0_linear_13382_9831)" fill-opacity="0.5"/>
 <g filter="url(#filter0_d_13382_9831)">
 <circle cx="119.693" cy="119.692" r="106.154" fill="url(#paint1_linear_13382_9831)" shape-rendering="crispEdges"/>
@@ -56,7 +56,7 @@ export const EstimatedDemand = () => {
             <p className='text-[16px] font-[500] text-textPrimary leading-[130%] '>A YEAR</p>
             </div>
         </div>
-        <div className='flex flex-col justify-center border border-white shadow-2xl border-2 h-[212.727px] w-[212.727px] items-center gap-[6px] bg-gradient-to-b from-[#D1ADFF] to-[#E7D5FF] rounded-full backdrop-blur-[10px] '>
+        <div className='flex flex-col justify-center border border-white shadow-2xl border-2 h-[200px] w-[200px] items-center gap-[6px] bg-gradient-to-b from-[#D1ADFF] to-[#E7D5FF] rounded-full backdrop-blur-[10px] '>
             <h1 className='text-[32px] text-blackText font-[500] leading-[130%] '>
                 $1,822.50
             </h1>

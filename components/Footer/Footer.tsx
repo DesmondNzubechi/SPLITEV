@@ -14,7 +14,7 @@ export const Footer = () => {
     return <div className='md:pt-[200px]  pb-0 pt-[500px] '>
     <div style={{
         backgroundImage: `url(${footerBg.src})`,
-        backgroundSize: 'cover',
+        backgroundSize: 'fit',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
     }} className='relative right-0 w-full after:absolute relative px-[30px] pt-[150px] pb-[20px] after:backdrop-blur-[5px] md:flex-row flex flex-col justify-center gap-[100px] after:w-full after:left-0 after:right-0 after:top-0 after:bottom-0 after:bg-blackTransparent '>

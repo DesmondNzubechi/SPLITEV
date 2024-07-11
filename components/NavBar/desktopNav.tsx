@@ -15,7 +15,7 @@ export const DesktopNav = () => {
                 <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/contact'>Contact</Link></li>
                 <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/driver'>About us</Link></li>
                 <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/blog-host'>Blog</Link></li>
-                <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/store'>Store</Link></li>
+                <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/select'>Store</Link></li>
 
        </ul>
         <div className='flex items-center py-[8px] px-[10px] gap-[20px]'>

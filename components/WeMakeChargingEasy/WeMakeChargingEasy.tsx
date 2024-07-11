@@ -2,6 +2,9 @@ import splitEvImg from '../../public/images/splitevhere.png';
 import Nvidia from '../../public/images/nvidia.svg';
 import techstar from '../../public/images/techstar.svg';
 import innovation from '../../public/images/innovation studio.svg';
+import urbanite from '../../public/images/urbanite.svg';
+import nextGen from '../../public/images/NextGen.svg';
+
 import { LuArrowUpRight } from "react-icons/lu";
 import Link from 'next/link';
 import layer1 from '../../public/images/Layer_1.svg';
@@ -38,17 +41,19 @@ export const WeMakeChargingEasyForHost = () => {
 
 export const OtherCompanies = () => {
     return <div className='px-[30px] '>
-    <div className='grid grid-cols-3 py-[50px] gap-[30px] '>
-    <Image src={innovation} alt='innovation studios' />
-    <Image src={techstar} alt='techstars' />   
-    <Image src={Nvidia} alt='nvidia' />   
+    <div className='grid grid-cols-2 md:grid-cols-5 items-center justify-between py-[50px] gap-[30px] '>
+    <Image src={Nvidia} alt='innovation studios' />
+    <Image src={urbanite} alt='techstars' />   
+            <Image src={innovation} alt='nvidia' /> 
+            <Image src={nextGen} alt='techstars' />   
+            <Image src={techstar} alt='nvidia' />        
         </div>
         </div>
 }
 
 export const InceptionProgram = () => {
     return <div className='px-[30px] w-full py-[20px] bg-[#FFF] '>
-        <div className='flex justify-around gap-[40px]  '>
+        <div className='flex flex-col  justify-around gap-[40px]  '>
             <div className='flex items-center gap-5'>
                 <Image src={Nvidia} alt='nvidia' /> 
             <p className='text-[25px] leading-[130%] font-[500] text-blackText px-[30px] border-l-[3px] '>Inception Program</p>    
