@@ -13,7 +13,7 @@ export const DesktopNav = () => {
             <ul className='flex items-center gap-[34px] pt-[5px] items-start'>
                 <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/Faq'>FAQ</Link></li>
                 <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/contact'>Contact</Link></li>
-                <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/about'>About us</Link></li>
+                <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/driver'>About us</Link></li>
                 <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/blog-host'>Blog</Link></li>
                 <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/store'>Store</Link></li>
 

@@ -25,7 +25,7 @@ export const MobileNav = () => {
               <Link href='/contact'>Contact</Link>
             </li>
             <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'>
-              <Link href='/about'>About us</Link>
+              <Link href='/driver'>About us</Link>
             </li>
             <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'>
               <Link href='/blog-host'>Blog</Link>

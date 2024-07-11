@@ -44,7 +44,7 @@ export const HeroSectionHost = () => {
                 Your browser does not support the video tag.
             </video>
           
-            <svg className="absolute top-0 h-full z-[50] bottom-0 left-[-100px] md:left-[-20px] " xmlns="http://www.w3.org/2000/svg" width="1000" height="1815" viewBox="0 0 1815 1000" fill="none">
+            <svg className="absolute top-[-50px] md:top-0 h-full z-[50] bottom-0 left-[-100px] md:left-[-20px] " xmlns="http://www.w3.org/2000/svg" width="1000" height="1815" viewBox="0 0 1815 1000" fill="none">
   <path d="M1815 0H0V1815L1815 0Z" fill="rgba(0, 0, 0, 0.50)"/>
             </svg>
             <svg className="absolute z-[1000] rounded-ful backdrop-b bottom-0 md:bottom-[-50px] right-0  md:right-[270px]  h-[150px] w-[150px] md:w-[400px] md:h-[357px] " xmlns="http://www.w3.org/2000/svg" width="540" height="357" viewBox="0 0 540 357" fill="none">
