@@ -118,7 +118,7 @@ export const HeroSectionHost = () => {
       <Subscription />
       <GreenerFuture />
       <UserFeedback />
-      <ReviewAndQuestion />
+     
       <UserFriendlyApp />
       <InteractiveMap/>
       </>
