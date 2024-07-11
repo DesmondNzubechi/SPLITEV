@@ -32,7 +32,7 @@ export const WhyChoseSplitEv = () => {
     return <div className='px-[30px] py-[100px] flex justify-center items-center '>
         <div className="flex flex-col gap-[30px] ">
             <h1 className="text-[25px] md:text-[48px] text-center font-[600] ">Why Choose SplitEV for Hosts?</h1>
-            <div className="grid grid-cols-1 gap-[15px] items-center justify-center md:grid-cols-2 lg:grid-cols-4">
+            <div className="flex flex-col gap-[15px] items-center justify-center md:flex-row">
                 {
                     arrayItems.map(data => {
                         return <div className={`flex max-w-[300px] self-center h-full rounded-[30px] ${data.title === 'Seamless Connectivity' ? ' bg-gradient-to-r from-[#BDE6A4] to-[#DEFEBA]  ' : 'bg-anotherBg'} flex-col gap-[10px] items-center px-[20px] pt-[20px] pb-[40px] `}>

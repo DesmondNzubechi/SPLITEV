@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="overflow-x-hidden w-full flex flex-col justify-center bg-primaryBg">
+      <body className="bg-primaryBg overflow-x-hidden mr-[-12%] mr-0">
         <DesktopNav/>
         <Main />
       <Footer/>
