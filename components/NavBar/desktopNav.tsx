@@ -12,15 +12,15 @@ export const DesktopNav = () => {
        <Link href='/'><Image className='w-[93.627px] h-[14.655px] ' height={50} width={100} alt='splitev' src={splitevText}/></Link>
             <ul className='flex items-center gap-[34px] pt-[5px] items-start'>
                 <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/Faq'>FAQ</Link></li>
-                <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/contact'>Contact</Link></li>
+                <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='#'>Contact</Link></li>
                 <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/driver'>About us</Link></li>
                 <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/blog-host'>Blog</Link></li>
-                <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='/select'>Store</Link></li>
+                <li className='text-[16px] font-[400] text-[#7F847D] leading-[130%]'><Link href='#'>Store</Link></li>
 
        </ul>
         <div className='flex items-center py-[8px] px-[10px] gap-[20px]'>
-                <Link href='/login' className='flex flex-row items-center text-[#7F847D] gap-[6px]'>Log in <Image src={loginIcon} alt='icon' className='w-[24px] h-[24px]' height={24} width={24} /></Link>
-                <Link className='bg-gradient-to-r from-[#BDE6A4] to-[#DEFEBA] py-[10px] px-[18px] text-center items-center rounded-[22px] ' href='/login'>Create Acount</Link>
+                <Link href='#' className='flex flex-row items-center text-[#7F847D] gap-[6px]'>Log in <Image src={loginIcon} alt='icon' className='w-[24px] h-[24px]' height={24} width={24} /></Link>
+                <Link className='bg-gradient-to-r from-[#BDE6A4] to-[#DEFEBA] py-[10px] px-[18px] text-center items-center rounded-[22px] ' href='#'>Create Acount</Link>
             </div>
              
         </div>

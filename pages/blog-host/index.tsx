@@ -22,10 +22,10 @@ function BlogHost() {
             <span className='text-[#92D839] '> Green Powerhouse with SplitEV</span>
         </h1>
         <div className='flex flex-row items-start w-fit '>
-                    <Image src={bloghostImg1} className='w-[120px] md:w-[160px] ' alt='blog host' />
-                    <Image src={bloghostImg2} className='ml-[-30px]  w-[120px] md:w-[160px] ' alt='blog host' />
-                    <Image src={bloghostImg3} className='ml-[-30px] w-[120px] md:w-[160px] ' alt='blog host' />
-                    <Image src={bloghostImg4} className='ml-[-30px] w-[120px] md:w-[160px] ' alt='blog host' />
+                    <Image src={bloghostImg1} className='w-[100px] md:w-[160px] ' alt='blog host' />
+                    <Image src={bloghostImg2} className='ml-[-30px]  w-[100px] md:w-[160px] ' alt='blog host' />
+                    <Image src={bloghostImg3} className='ml-[-30px] w-[100px] md:w-[160px] ' alt='blog host' />
+                    <Image src={bloghostImg4} className='ml-[-30px] w-[100px] md:w-[160px] ' alt='blog host' />
         </div>
         <p className='text-[#7F847D] max-w-[808px] text-[16px] font-[500] leading-[130%] text-center'>As a SplitEV Host, Whether it's a cozy spot in your driveway, a dedicated space at a local business parking area, or a strategic point at a community center, each location adds valuable variety to our network. As a SplitEV Host, You play a pivotal role in building an accessible and eco-friendly charging landscape.</p>
             </div>

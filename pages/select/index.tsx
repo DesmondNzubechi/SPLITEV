@@ -1,9 +1,10 @@
+import { useState } from "react"
 
 
 export default function Select(){
    
 
-const arrayss = [
+const allTheBank = [
         {
             "id": 825,
             "code": "000019",
@@ -2901,14 +2902,66 @@ const arrayss = [
         }
     ]
 
-    return <div className="px-[30px] flex justify-center items-center flex-col py-[300px] ">
-        <select name="" id="">
-           <option > select bank</option>
-            {
-                arrayss.map(opt => {
-                    return <option key={opt.id} value={opt.name}>{opt.name}</option>
-                })
-}
-        </select>
-    </div>
+    const [filteredBank, setFilteredBank] = useState<any[]>([]);
+    const [searchInput, setSearchInput] = useState('')
+    const [selectedBank, setSelectedBank] = useState({
+        id: 0,
+        code: "",
+        name: ""
+      });
+      
+      const handleInputChange = (e: any) => {
+          const value = e.target.value;
+          setSearchInput(value)
+        const findBank = allTheBank.filter(bank => bank.name.toLowerCase().includes(value.toLowerCase()));
+       setFilteredBank(findBank)
+      };
+      
+      return (
+        <div className="px-[30px] flex justify-center items-center flex-col pt-[150px] rounded py-[100px]">
+          <div className="bg-white flex flex-col gap-5 rounded py-[10px] px-[20px]">
+                  <button>{selectedBank.name ? selectedBank.name : 'Select Bank'}</button>
+                  <button></button>
+            <div className="flex flex-col gap-5 relative">
+              <div>
+                          <input 
+                              value={searchInput}
+                  onChange={handleInputChange} 
+                  type="text" 
+                  placeholder="Search for bank" 
+                  className="border w-full p-2 outline-0 text-center" 
+                />
+              </div>
+                      <div className="flex gap-3 flex-col w-full h-[40vh] overflow-y-auto bg-white">
+                          {searchInput && <div className="flex flex-col gap-3">
+                              <p className="text-center font-medium mb-[20px] ">Search Results</p>
+                
+                              {filteredBank.map((item, index) => (
+                                  <p
+                                      key={index}
+                                      onClick={() => {
+                                          setSelectedBank(item)
+                                          setSearchInput('')
+                                      }}
+                                      className="text-slate-700 cursor-pointer border-b">
+                                      {item.name}
+                                  </p>
+                              ))}
+                          </div>}
+                {!searchInput && allTheBank.map((item, index) => (
+                  <p 
+                    key={index} 
+                    onClick={() => {
+                        setSelectedBank(item)
+                        setSearchInput('')
+                    }} 
+                    className="text-slate-700 cursor-pointer border-b">
+                    {item.name}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      );
 }

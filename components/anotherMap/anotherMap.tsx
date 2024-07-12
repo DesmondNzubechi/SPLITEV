@@ -1,3 +1,4 @@
+'use client'
 import { useState } from 'react';
 import Image from 'next/image';
 import mapImage from '../../public/images/mapsvg.png'; // Assuming the SVG is saved as map1.png in the public/images folder

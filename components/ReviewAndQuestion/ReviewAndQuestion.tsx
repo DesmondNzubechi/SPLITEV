@@ -55,7 +55,7 @@ export const ReviewAndQuestion = () => {
     };
 
     const Reviews = () => {
-        return <div>
+        return <div className='overflow-x-hidden'>
              <Slider {...settings} className="flex flex-col md:flex-row items-center relative z-[10] gap-[30px] px-[40px] justify-around">
                     {reviewers.map((theReview, index) => (
                         <div key={index} className="flex flex-col relative gap-[10px] px-[30px] py-[30px] items-center h-full  bg-whiteHalf rounded-[120px]  border backdrop-blur-[6px]">

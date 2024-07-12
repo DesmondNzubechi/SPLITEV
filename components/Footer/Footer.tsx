@@ -11,10 +11,10 @@ import quoteIcon from '../../public/images/quoteIcon.svg';
 import Link from 'next/link';
 
 export const Footer = () => {
-    return <div className='md:pt-[200px]  pb-0 pt-[500px] '>
+    return <div className='md:pt-[200px] overflow-x-hidden  pb-0 pt-[500px] '>
     <div style={{
         backgroundImage: `url(${footerBg.src})`,
-        backgroundSize: 'fit',
+        backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
     }} className='relative right-0 w-full after:absolute relative px-[30px] pt-[150px] pb-[20px] after:backdrop-blur-[5px] md:flex-row flex flex-col justify-center gap-[100px] after:w-full after:left-0 after:right-0 after:top-0 after:bottom-0 after:bg-blackTransparent '>
@@ -57,7 +57,7 @@ export const Footer = () => {
             </div>
             <div className='flex flex-col z-[10] gap-5'>
                 <p className='flex items-start gap-2 text-[#CFF0AD] '><Image src={quoteIcon} alt='quote icon' /> <span>- Revolutionizing the EV Charging Experience with SplitEV!</span></p>
-                <div className='flex  gap-[100px] items-start '>
+                <div className='grid grid-cols-2 md:grid-cols-3  gap-[100px] items-start '>
                     <div className='flex flex-col gap-[16px] items-start  '>
                         <h1 className='text-[15px] md:text-[18px] leading-[150%] font-[600] text-white '>Help</h1>
                         <Link href='' className='text-[12px] md:text-[14px] font-[400] leading-[140%] text-white hover:text-slate-100 '>FAQs</Link>
