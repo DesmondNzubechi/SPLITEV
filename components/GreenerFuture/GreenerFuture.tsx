@@ -11,8 +11,8 @@ export const GreenerFuture = () => {
             <p className='text-[15px] md:text-[20px] font-[400] uppercase text-textPrimary '>just got a whole lot easier</p>
         </div>
         <div className='md:absolute flex justify-center py-[20px] bottom-0 left-[15%] '>
-        <div className=' bg-gradient-to-r from-[#D1ADFF] to-[#E7D5FF] relative w-[450px] h-[450px] rounded-full border border-primaryBg border-[20px] '>
-        <Image src={ourAppImg} className='absolute top-[-20px] right-[70px] ' alt='our app image' />
+        <div className=' bg-gradient-to-r from-[#D1ADFF] to-[#E7D5FF] relative w-[400px] h-[400px] md:w-[450px] md:h-[450px] rounded-full border border-primaryBg border-[20px] '>
+        <Image src={ourAppImg} className='absolute top-[-20px] right-[50px] md:right-[70px] ' alt='our app image' />
         </div>
         </div>
         <div>

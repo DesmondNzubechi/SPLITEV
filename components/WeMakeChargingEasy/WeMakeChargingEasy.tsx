@@ -112,7 +112,7 @@ export const InceptionProgram = () => {
     return (
         <div className='px-[30px] w-full py-[20px] bg-[#FFF]'>
             <Slider {...settings} className='flex flex-col md:flex-row justify-around gap-[40px]'>
-                <div className='flex items-center gap-5'>
+                <div className='grid grid-cols-2 items-center'>
                     <Image src={Nvidia} alt='nvidia' />
                     <p className='text-[25px] leading-[130%] font-[500] text-blackText px-[30px] border-l-[3px]'>Inception Program</p>
                 </div>

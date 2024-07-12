@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import filteringIcon from '../../public/images/filtering.svg';
-
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { RiArrowDropUpLine } from "react-icons/ri";
+import searchIcon from '../../public/images/searchIcon.svg';
 const FAQ = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [visibleAnswerIndex, setVisibleAnswerIndex] = useState(null);
@@ -87,39 +89,53 @@ const FAQ = () => {
 
   return (
     <div className='py-[150px] flex-col flex items-center justify-center gap-y-[100px] px-[30px]'>
-      <div className='max-w-[800px] flex-col flex items-center justify-center gap-y-[100px] px-[30px]'>
-        <div className="bg-gradient-to-r from-[#CFF0AD] to-[#A6E675] p-[10px] items-center w-full rounded-full">
-          <div className='bg-primaryBg p-[10px] rounded-full flex items-center justify-between gap-[30px] md:gap-[150px]'>
-            <div className="flex items-center gap-[20px]">
+      <div className='max-w-[800px] flex-col flex items-center justify-center gap-y-[50px] px-[30px]'>
+        <div className="bg-gradient-to-r rounded-[10px] from-[#CFF0AD] to-[#A6E675] p-[10px] items-center w-full md:rounded-full">
+          <div className='bg-primaryBg p-[10px] rounded-[10px] md:rounded-full flex flex-col md:flex-row items-center justify-between gap-[10px] md:gap-[150px]'>
+            <div className="flex items-center w-full gap-[10px]">
               <input 
                 type="text" 
-                className="flex w-full outline-0 items-center leading-[140%] font-[400] text-[12px] md:text-[14px] text-primaryText bg-[#FFF] shadow-md rounded-full h-[60px] pl-[20px] pr-[30px]" 
+                className="flex w-full outline-0 items-center leading-[140%] font-[400] text-[12px] md:text-[14px] text-primaryText bg-[#FFF] shadow-md  rounded-[10px] md:rounded-full h-[40px] md:h-[60px] px-[20px]" 
                 placeholder="Enter keywords that characterize your problem" 
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
-              <button className="w-[60px] h-[60px] px-[20px] rounded-full p-[3px] flex items-center justify-center bg-white">
+       <button className="md:w-[60px] w-[40px] h-[40px] md:h-[60px] px-[10px] md:px-[20px] rounded-full p-[3px] flex items-center justify-center bg-white">
+                <Image src={searchIcon} alt="Filter Icon" width={20} height={20} />
+              </button>
+            </div>
+            <div className="flex items-center  gap-[20px]">
+              <select name="" className='bg-primaryBg  outline-0 option:bg-primaryBg ' id="">
+                <option value="">Select Type</option>
+                <option value="First Type">First Type</option>
+                <option value="Second Type">Second Type</option>
+                <option value="Third Type">Third Type</option>
+              </select>
+            <button className="md:w-[60px] w-[40px] h-[40px] md:h-[60px] px-[10px] rounded-full p-[3px] flex items-center justify-center bg-white">
                 <Image src={filteringIcon} alt="Filter Icon" width={20} height={20} />
               </button>
+
             </div>
           </div>
         </div>
-        <div className="w-full mt-[30px]">
+        <div className="w-full ">
           {filteredFaqs.map((faq, index) => (
-            <div key={index} className="mb-[20px]">
+            <div key={index} className="mb-[20px] bg-white py-[20px] md:min-w-[700px] md:max-w-[700px] rounded-[20px] px-[20px] ">
               <button
-                className="w-full text-left bg-gray-100 p-[10px] rounded-md"
+                className="w-full text-left flex justify-between  text-black text-[18px] leading-[150%] font-[600] p-[10px] rounded-md"
                 onClick={() => handleToggleAnswer(index)}
               >
                 {faq.question}
+                {visibleAnswerIndex !== index && <RiArrowDropDownLine className='text-[50px] '/>}
+               { visibleAnswerIndex === index && <RiArrowDropUpLine className='text-[50px] '/>}
               </button>
               {visibleAnswerIndex === index && (
-                <div className="mt-[10px] p-[10px] bg-gray-200 rounded-md">
-                  <p>{faq.firstAns}</p>
-                  <p>{faq.howItWork}</p>
-                  <ul className="list-disc list-inside">
+                <div className="mt-[10px] flex flex-col gap-3 p-[10px] bg-[#F5F5F5] rounded-md">
+                  <p className='text-[#A6E675] font-[700] leading-[130%] text-[16px] '>{faq.firstAns}</p>
+                  <p  className='text-textPrimary font-[700] leading-[130%] text-[16px] '>{faq.howItWork}</p>
+                  <ul className=" flex flex-col text-[14px] gap-2 text-textPrimary">
                     {faq.answer.map((ans, i) => (
-                      <li key={i}>{ans}</li>
+                      <li key={i}>{i+1}. {ans}</li>
                     ))}
                   </ul>
                 </div>
