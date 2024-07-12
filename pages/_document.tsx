@@ -11,8 +11,6 @@ export default function Document() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <header>
- <DesktopNav />
-        <MobileNav/>
       </header>
       <body className="bg-primaryBg  overflow-x-hidden p-0 m-0">
         <Main />

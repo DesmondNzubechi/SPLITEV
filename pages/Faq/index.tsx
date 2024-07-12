@@ -4,6 +4,8 @@ import filteringIcon from '../../public/images/filtering.svg';
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { RiArrowDropUpLine } from "react-icons/ri";
 import searchIcon from '../../public/images/searchIcon.svg';
+import { DesktopNav } from '@/components/NavBar/desktopNav';
+import { MobileNav } from '@/components/NavBar/mobileNav';
 const FAQ = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [visibleAnswerIndex, setVisibleAnswerIndex] = useState(null);
@@ -88,6 +90,9 @@ const FAQ = () => {
   );
 
   return (
+    <>
+      <DesktopNav />
+      <MobileNav/>
     <div className='py-[150px] flex-col flex items-center justify-center gap-y-[100px] px-[30px]'>
       <div className='max-w-[800px] flex-col flex items-center justify-center gap-y-[50px] px-[30px]'>
         <div className="bg-gradient-to-r rounded-[10px] from-[#CFF0AD] to-[#A6E675] p-[10px] items-center w-full md:rounded-full">
@@ -144,7 +149,8 @@ const FAQ = () => {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+      </>
   );
 };
 

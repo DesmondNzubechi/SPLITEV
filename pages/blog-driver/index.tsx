@@ -16,10 +16,14 @@ import { EarnAsYouCharge } from '@/components/earnAsYouCharge/earnAsYouCharge'
 import { OurMobileApp } from '@/components/ourMobileApp/OurMobileApp'
 import { Map } from '@/components/Map/map'
 import { SupportingYou } from '@/components/SupportingYou/SupportingYou'
+import { DesktopNav } from '@/components/NavBar/desktopNav'
+import { MobileNav } from '@/components/NavBar/mobileNav'
 
 
 function BlogDriver() {
     return <>
+        <DesktopNav />
+        <MobileNav/>
     <div className=' py-[150px] px-[30px] flex flex-col gap-[50px] items-center justify-center'>
         <div className='flex flex-col gap-0'>
     <div className='bg-[#FFF] shadow flex flex-col items-center justify-center px-[20px] py-[20px] rounded-[30px] gap-[40px] '>

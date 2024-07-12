@@ -19,6 +19,8 @@ import { UserFriendlyApp } from "../userFriendlyApp/userFriendlyApp";
 import InteractiveMap from "../anotherMap/anotherMap";
 import blackBg from '../../public/images/bghere.png';
 import Link from 'next/link';
+import { DesktopNav } from "../NavBar/desktopNav";
+import { MobileNav } from "../NavBar/mobileNav";
 
 export const HeroSectionHost = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -30,7 +32,9 @@ export const HeroSectionHost = () => {
     }, []);
 
   return (
-      <>
+    <>
+      <DesktopNav />
+      <MobileNav/>
         <div className="relative w-full overflow-hidden">
             <video
                 className="w-full h-[90vh] z-[50] relative object-cover"
