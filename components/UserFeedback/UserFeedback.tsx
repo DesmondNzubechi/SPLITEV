@@ -8,7 +8,7 @@ export const UserFeedback = () => {
         backgroundRepeat: 'no-repeat',
             backgroundSize: "cover"
         }}
-            className='flex px-[30px] w-full bg-fit bg-left bg-contain  my-[100px]  py-[50px] flex-col justify-end gap-5 items-start '
+            className='flex px-[30px] w-full bg-cover bg-left bg-contain  my-[100px]  py-[50px] flex-col justify-end gap-5 items-start '
     >
         <div className='bg-[#97CB63] p-2 rounded-full'>
         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">

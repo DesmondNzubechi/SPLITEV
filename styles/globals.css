@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.slideHere{
+    display: flex !important;
+}
+
+.reviews{
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+}

@@ -22,7 +22,7 @@ export const MobileNav = () => {
   return (
     <nav className='flex md:hidden z-[2000] justify-center fixed w-full left-0 right-0 top-0 py-[30px] items-center gap-5 px-[20px]'>
       <Link href='/' className='bg-navBg backdrop-blur-[20px] p-[20px] gap-[5px] rounded-full shadow-md'>
-        <Image className='w-[26px]' src={splitevLogo} alt='splitev logo' width={26} height={26} />
+        <Image className='w-[30px]' src={splitevLogo} alt='splitev logo'  />
       </Link>
       {theNav && (
         <div className='bg-navBg backdrop-blur-[20px] top-[100px] shadow-md rounded-[33px] gap-[20px] pt-[5px] flex flex-col right-[20px] left-[20px] fixed items-center justify-between px-[30px] py-[10px]'>
@@ -59,11 +59,11 @@ export const MobileNav = () => {
         </Link>
         {!theNav ? (
           <button onClick={() => setTheNav(true)}>
-            <FaBars className='w-[70px] cursor-pointer' />
+            <FaBars className='w-[100px] cursor-pointer' />
           </button>
         ) : (
           <button onClick={() => setTheNav(false)}>
-            <FaXmark className='cursor-pointer' />
+            <FaXmark className='w-[100px] cursor-pointer' />
           </button>
         )}
       </div>

@@ -37,7 +37,7 @@ export const ReviewAndQuestion = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
@@ -54,26 +54,46 @@ export const ReviewAndQuestion = () => {
         ]
     };
 
+    // const Reviews = () => {
+    //     return <div className='overflow-x-hidden'>
+    //          <Slider {...settings} className="flex flex-col md:flex-row items-center relative z-[10] gap-[30px] px-[40px] justify-around">
+    //                 {reviewers.map((theReview, index) => (
+    //                     <div key={index} className="flex flex-col relative gap-[10px] px-[30px] py-[30px] items-center h-full  bg-whiteHalf rounded-[120px]  border backdrop-blur-[6px]">
+    //                         <div>
+    //                         <Image src={theReview.image} className='w-[100px] h-[100px]' alt={`${theReview.name} image`} />
+    //                         </div>
+    //                         <div className='flex flex-col'>
+    //                             <p className='text-[12px] md:text-[16px] font-[400] leading-[130%] text-blackText self-stretch'>{theReview.review}</p>
+    //                             <p className='self-end text-[10px] md:text-[12px] text-primaryText leading-[130%]'>{theReview.date}</p>
+    //                         </div>
+    //                         <Image src={theReview.icon} className='w-[36.729px] absolute top-[50px] right-[30px]  mr-[20px] self-end h-[25.779px]' alt='quote icon' />
+    //                     </div>
+    //                 ))}
+    //             </Slider>
+
+    //     </div>
+    // }
+
     const Reviews = () => {
-        return <div className='overflow-x-hidden'>
-             <Slider {...settings} className="flex flex-col md:flex-row items-center relative z-[10] gap-[30px] px-[40px] justify-around">
+        return <div className='overflow-x-hidden relative z-[1000]'>
+             <Slider {...settings} className="flex flex-col  md:flex-row items-center relative z-[10] gap-[30px] px-[40px] justify-around">
                     {reviewers.map((theReview, index) => (
-                        <div key={index} className="flex flex-col relative gap-[10px] px-[30px] py-[30px] items-center h-full  bg-whiteHalf rounded-[120px]  border backdrop-blur-[6px]">
-                            <div>
-                            <Image src={theReview.image} className='w-[100px] h-[100px]' alt={`${theReview.name} image`} />
-                            </div>
+                        <div key={index} className="flex  relative gap-[10px] reviews px-[30px] py-[30px] items-center h-full  bg-whiteHalf rounded-[120px]  border backdrop-blur-[6px]">
+                            
+                            <Image src={theReview.image} className='md:w-[100px] w-[70px] h-[70px] md:h-[100px]' alt={`${theReview.name} image`} />
+                          
                             <div className='flex flex-col'>
-                                <p className='text-[12px] md:text-[16px] font-[400] leading-[130%] text-blackText self-stretch'>{theReview.review}</p>
-                                <p className='self-end text-[10px] md:text-[12px] text-primaryText leading-[130%]'>{theReview.date}</p>
+                                <h1 className='font-[600] text-[10px] md:text-[18px] text-black leading-[130%]'>{ theReview.name}</h1>
+                                <p className='text-[8px] md:text-[16px] font-[400] leading-[130%] text-blackText self-stretch'>{theReview.review}</p>
+                                <p className='self-end text-[8px] md:text-[12px] text-primaryText leading-[130%]'>{theReview.date}</p>
                             </div>
-                            <Image src={theReview.icon} className='w-[36.729px] absolute top-[50px] right-[30px]  mr-[20px] self-end h-[25.779px]' alt='quote icon' />
+                            <Image src={theReview.icon} className='md:w-[36.729px]  top-[50px] right-[30px]  mr-[20px] self-start w-[15px] h-[15px] md:h-[25.779px]' alt='quote icon' />
                         </div>
                     ))}
                 </Slider>
 
         </div>
     }
-
     return <div>
     <div className='relative'>
    <Reviews/>
@@ -101,7 +121,7 @@ export const ReviewAndQuestion = () => {
     </linearGradient>
   </defs>
         </svg>
-        <svg className='absolute top-[-50px] ' xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1920 398" fill="none">
+        <svg className='absolute top-[-50px] w-full right-0 ' xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1920 398" fill="none">
   <path d="M-2 394.375L388 5.375H1922" stroke="#48E62E" stroke-opacity="0.1" stroke-width="10"/>
 </svg>
         </div>
