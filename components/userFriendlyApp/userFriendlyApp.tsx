@@ -61,8 +61,8 @@ export const UserFriendlyApp = () => {
                     <div className='flex flex-col gap-[30px] '>
                         {
                             interactive.map((data, index) => (
-                                <div key={index} className='flex border-b flex-row justify-between items-center gap-5'>
-                                    <div onClick={() => toggleAnswer(index)} className='cursor-pointer'>
+                                <div key={index} className='flex border-b  flex-row md:max-w-[500px] md:min-w-[500px] justify-between items-center gap-5'>
+                                    <div onClick={() => toggleAnswer(index)} className='cursor-pointer flex flex-col gap-3'>
                                         <h1 className='uppercase text-[15px]  focus:text-blackText md:text-[20px] font-[700] leading-[130%] text-textPrimary'>
                                             {data.question}
                                         </h1>
@@ -73,7 +73,8 @@ export const UserFriendlyApp = () => {
                                         )}
                                     </div>
                                     <div onClick={() => toggleAnswer(index)} className='cursor-pointer'>
-                                        <Image src={openQuestion === index ? minus : plus} alt='toggle icon' />
+                                        <button className='text-[25px]'>{openQuestion === index ? '-' : '+'}</button>
+                                        {/* <Image src={openQuestion === index ? minus : plus} className={` ${minus && 'w-[50px]'} `} alt='toggle  icon' /> */}
                                     </div>
                                 </div>
                             ))
