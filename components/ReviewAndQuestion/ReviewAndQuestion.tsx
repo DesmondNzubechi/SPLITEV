@@ -1,14 +1,19 @@
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import ethan from '../../public/images/review1.png';
 import julia from '../../public/images/review2.png';
 import quoteIcon from '../../public/images/quoteIcon.svg';
-import Image from 'next/image';
-import Link from 'next/link';
-interface revie {
-    name: string
-    review: string
-    date: string
-    image: any
-    quoteIcon : any
+
+interface Review {
+    name: string;
+    review: string;
+    date: string;
+    image: any;
+    quoteIcon: any;
 }
 
 export const ReviewAndQuestion = () => {
@@ -29,23 +34,49 @@ export const ReviewAndQuestion = () => {
             date : '04.06.2023'
         },
     ]
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        rtl: true, // This will make the slide move from right to left
+        responsive: [
+            {
+                breakpoint: 768, // Screen width under 768px
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    };
+
+    const Reviews = () => {
+        return <div>
+             <Slider {...settings} className="flex flex-col md:flex-row items-center relative z-[10] gap-[30px] px-[40px] justify-around">
+                    {reviewers.map((theReview, index) => (
+                        <div key={index} className="flex flex-col relative gap-[10px] px-[30px] py-[30px] items-center h-full  bg-whiteHalf rounded-[120px]  border backdrop-blur-[6px]">
+                            <div>
+                            <Image src={theReview.image} className='w-[100px] h-[100px]' alt={`${theReview.name} image`} />
+                            </div>
+                            <div className='flex flex-col'>
+                                <p className='text-[12px] md:text-[16px] font-[400] leading-[130%] text-blackText self-stretch'>{theReview.review}</p>
+                                <p className='self-end text-[10px] md:text-[12px] text-primaryText leading-[130%]'>{theReview.date}</p>
+                            </div>
+                            <Image src={theReview.icon} className='w-[36.729px] absolute top-[50px] right-[30px]  mr-[20px] self-end h-[25.779px]' alt='quote icon' />
+                        </div>
+                    ))}
+                </Slider>
+
+        </div>
+    }
 
     return <div>
-    <div className='flex flex-col relative gap-y-[100px] '>
-        <div className="flex flex-col md:flex-row items-center relative z-[10] gap-[20px] px-[30px] justify-center ">
-            {
-                reviewers.map((theReview) => {
-                return  <div className="flex flex-row gap-[10px] px-[20px] py-[10px] items-center self-stretch bg-whiteHalf rounded-[120px] shadow-2xl border backdrop-blur-[6px] ">
-                <Image src={theReview.image} className='w-[136px] h-[136px] ' alt='ethan image' />
-                <div className='flex flex-col '>
-                        <p className='text-[12px] md:text-[16px] font-[400] leading-[130%] text-blackText self-stretch '>{theReview.review}</p>
-                        <p className='self-end text-[10px] md:text-[12px] text-primaryText leading-[130%] '>{theReview.date}</p>
-                </div>
-                <Image src={theReview.icon} className='w-[36.729px] mr-[20px] self-start h-[25.779px] ' alt='quote icon' />
-            </div>
-                })
-           }
-        </div>
+    <div className='relative'>
+   <Reviews/>
 
         <div className=" w-full mt-[50px] py-[10px] items-center">
         <div className="flex bg-[#FFF] flex-col w-full px-[30px] py-[50px] gap-[20px] items-center  ">

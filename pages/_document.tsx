@@ -6,10 +6,15 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
-      <body className="bg-primaryBg md:mr-0 mr-[-100px] overflow-x-hidden">
-        <DesktopNav />
-        <MobileNav/>
+       <Head>
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <header>
+      <DesktopNav />
+      <MobileNav/>
+      </header>
+      <body className="bg-primaryBg  overflow-x-hidden p-0 m-0">
         <Main />
       <Footer/>
         <NextScript />

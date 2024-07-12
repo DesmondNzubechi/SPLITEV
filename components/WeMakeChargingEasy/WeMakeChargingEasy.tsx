@@ -4,11 +4,14 @@ import techstar from '../../public/images/techstar.svg';
 import innovation from '../../public/images/innovation studio.svg';
 import urbanite from '../../public/images/urbanite.svg';
 import nextGen from '../../public/images/NextGen.svg';
-
 import { LuArrowUpRight } from "react-icons/lu";
 import Link from 'next/link';
 import layer1 from '../../public/images/Layer_1.svg';
 import Image from 'next/image';
+import React from 'react';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 
 export const WeMakeChargingEasy = () => {
     return     <div className='bg-primaryBg py-[50px] px-[30px] flex flex-col items-center justify-center  gap-[30px] '>
@@ -40,26 +43,83 @@ export const WeMakeChargingEasyForHost = () => {
 }
 
 export const OtherCompanies = () => {
-    return <div className='px-[30px] '>
-    <div className='grid grid-cols-2 md:grid-cols-5 items-center justify-between py-[50px] gap-[30px] '>
-    <Image src={Nvidia} alt='innovation studios' />
-    <Image src={urbanite} alt='techstars' />   
-            <Image src={innovation} alt='nvidia' /> 
-            <Image src={nextGen} alt='techstars' />   
-            <Image src={techstar} alt='nvidia' />        
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        rtl: true, // This will make the slide move from right to left
+        responsive: [
+            {
+                breakpoint: 768, // Screen width under 768px
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    };
+
+
+    return (
+        <div className='px-[30px] '>
+            <Slider {...settings} className='py-[50px]'>
+                <div className='px-[15px]'>
+                    <Image src={Nvidia} alt='nvidia' />
+                </div>
+                <div className='px-[15px]'>
+                    <Image src={urbanite} alt='urbanite' />
+                </div>
+                <div className='px-[15px]'>
+                    <Image src={innovation} alt='innovation studios' />
+                </div>
+                <div className='px-[15px]'>
+                    <Image src={nextGen} alt='nextGen' />
+                </div>
+                <div className='px-[15px]'>
+                    <Image src={techstar} alt='techstar' />
+                </div>
+            </Slider>
         </div>
-        </div>
+    );
 }
 
+
 export const InceptionProgram = () => {
-    return <div className='px-[30px] w-full py-[20px] bg-[#FFF] '>
-        <div className='flex flex-col md:flex-row  justify-around gap-[40px]  '>
-            <div className='flex items-center gap-5'>
-                <Image src={Nvidia} alt='nvidia' /> 
-            <p className='text-[25px] leading-[130%] font-[500] text-blackText px-[30px] border-l-[3px] '>Inception Program</p>    
-            </div>
-    <Image src={layer1} alt='innovation studios' />  
-     
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        rtl: true, // This will make the slide move from right to left
+        responsive: [
+            {
+                breakpoint: 768, // Screen width under 768px
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    };
+
+    return (
+        <div className='px-[30px] w-full py-[20px] bg-[#FFF]'>
+            <Slider {...settings} className='flex flex-col md:flex-row justify-around gap-[40px]'>
+                <div className='flex items-center gap-5'>
+                    <Image src={Nvidia} alt='nvidia' />
+                    <p className='text-[25px] leading-[130%] font-[500] text-blackText px-[30px] border-l-[3px]'>Inception Program</p>
+                </div>
+                <div className='flex items-center justify-center'>
+                    <Image src={layer1} alt='innovation studios' />
+                </div>
+            </Slider>
         </div>
-        </div>
-}
+    );
+};
