@@ -110,7 +110,7 @@ export const InceptionProgram = () => {
     };
 
     return (
-        <div className='px-[30px] w-full py-[20px] bg-[#FFF]'>
+        <div className='px-[30px] mb-[50px] mt-[150px] w-full py-[20px] bg-[#FFF]'>
             <Slider {...settings} className='flex flex-col md:flex-row justify-around gap-[40px]'>
                 <div className='grid custom-slide custom-slider slideHere grid-cols-2 items-center'>
                     <Image src={Nvidia} alt='nvidia' />

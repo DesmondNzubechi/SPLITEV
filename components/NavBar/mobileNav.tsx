@@ -55,7 +55,7 @@ export const MobileNav = () => {
       )}
       <div className='bg-navBg relative backdrop-blur-[20px] py-[20px] shadow-md rounded-[33px] gap-[100px] flex items-center w-full h-full justify-between px-[20px] py-[10px]'>
         <Link href='/'>
-          <Image className='w-[100px] self-center h-auto' alt='splitev' src={splitevText} />
+          <Image className='w-[100px] self-center ' alt='splitev' src={splitevText} />
         </Link>
         {!theNav ? (
           <button onClick={() => setTheNav(true)}>
